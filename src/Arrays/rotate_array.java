@@ -12,6 +12,7 @@ public class rotate_array {
 
     }
     public static void rotate(int[] ar, int k){
+        k%=ar.length;
          reverse(ar,0,ar.length-1);
          reverse(ar,0,k-1);
          reverse(ar,k,ar.length-1);
